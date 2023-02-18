@@ -1,0 +1,111 @@
+:root{
+    --glamour: papayawhip;
+    --text: rgb(3, 3, 70);
+    --sweets: rgb(84, 77, 112);
+}
+
+*{
+    background-color: var(--glamour) ;
+    margin: 0.3em;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-end;
+    margin-top: 1.5em;
+}
+span {
+    font-size: larger;
+    font-style: italic;
+    flex-basis: 50%;
+    text-align: center;
+    flex-shrink: 1;
+}
+span p{
+   color: black;
+}
+p span{
+    color: rgb(187, 128, 128);
+ }
+#can_do {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+}
+.about{
+    flex-basis: 25em;
+}
+.about p{
+    padding: 6px;
+}
+h1, h2, h3   span{
+    color: var(--text);
+    
+}
+h2{
+    display: inline-block;
+}
+nav, p, li{
+    color: var(--sweets);
+}
+ .first a{
+    color: var(--sweets);
+    text-decoration-line: none;
+    font-family: cursive;
+    font-size: 0.8em;
+}
+img {
+    width: 17em;
+    /* width: 28%;
+    height: 30%; */
+    border: 0.4em solid rgb(224, 211, 190);
+    border-bottom: 0;
+    margin: 0.8rem 1.7rem 2.6rem 1rem;
+    border-radius: 10%;
+}
+i {
+    color: var(--text);
+}
+h1{
+    position: relative;
+}
+h1::before {
+    content: '';
+    position: absolute;
+    width: 1.2em;
+    height: 0.05rem;
+    bottom: 0;
+    left: 37%;
+    text-align: center;
+    background-color: var(--sweets);
+}
+#intro{
+     /* padding-left: 45%; */
+     text-align: center;
+}
+#experience{
+    display: flex;
+    /* padding-top: 1.8rem; */
+    margin: 1.5em 0em;
+}
+ #black{ 
+    margin: 1.5em 0.8em;
+    padding: 0.6em 0.5em 0em 0.5em ;
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    background-color: black;
+    color: var(--glamour);
+    text-align: center;
+    
+ }
+ @media screen(max-width:1024px) {
+    span {
+    font-size: larger;
+    font-style: italic;
+    flex-basis: 50%;
+    text-align: center;
+    flex-shrink: 2;
+}
+ }
+ 

@@ -1,0 +1,97 @@
+*{
+    background-color: rgb(16, 16, 119);
+    padding: 0 0.3em;
+}
+img{
+    object-fit: contain;
+    width: 45%;
+}
+.yo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    white-space: nowrap;
+    padding: 0.3em;
+    /* flex-wrap: wrap; */
+}
+.yo > label{
+    flex-grow: 2;
+    justify-content: center;
+    color: azure;
+}
+  .yo > input{  
+    flex-basis: 0.5;
+    padding: 0.2em 1em 1em 0;
+    margin: 3 auto;
+    
+}
+.yo > select{
+    width: 14em;
+    padding: 0.5em 1em 0.5em 0.2em;
+    border:rgb(27, 27, 27) solid 0.15em
+}
+
+nav{
+    margin: 15;
+    display: flex;
+   /* flex-basis: auto; */
+    align-content: flex-end;
+    justify-content: flex-end;
+    
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    block-size: auto;
+    background-color: plum;
+    color: brown;
+    font-family: cursive;
+text-align: center;
+    padding: 3px;
+    text-align: right;
+    margin: 1px;
+}
+marquee{
+    color: brown;
+}
+p, li{
+    color: rgb(27, 27, 27);
+    font-family: cursive;
+}
+h3,h4{
+    color: maroon;
+}
+button {
+    background-color: brown;
+    color: plum;
+    margin: 2em auto;
+    padding: 0.6rem;
+    border: 1.5px solid gray;
+    border-radius: 45%;
+    transition: all 1s ;
+}
+button:hover {
+    background-color: rgb(194, 47, 47);
+    color: rgb(243, 181, 243) ;
+    box-shadow: 3px 4px 3px rgb(243, 181, 243);
+    transform: translateY(-2px);
+}
+
+.kiki h3{
+    text-align: center;
+    color: plum;
+    padding: 1.5em;
+    border-bottom: 1px solid grey;
+}
+
+/* /* for bigger screens  */
+@media screen and (min-width: 768px){
+    .yo > select{
+        width: 31.3%;
+        padding: 0.5em 1em 0.5em 0.2em;
+        border:rgb(27, 27, 27) solid 0.15em
+    }
+     input{
+         width: 30%;
+    }
+}

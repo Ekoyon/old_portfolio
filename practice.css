@@ -1,0 +1,106 @@
+:root{
+    --border_h2: green;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/*main content*/
+.lala{
+    background-color: rgb(46, 44, 44);
+    margin: 1em auto;
+    padding: 0.5em;
+    width: 70%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+/*profile*/
+ #suku{ 
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ } 
+ /* #suku #intro{ 
+    width: 40rem;
+    align-items: center;
+ }*/
+#suku h2{
+    margin: auto;
+    white-space: nowrap;
+        font-style: italic;
+        color: var(--border_h2);
+        font-size: larger;
+}
+/* #details { 
+    align-self: baseline;
+}*/
+img{ 
+    width: 45%;
+    border: solid 3.5px var(--border_h2);
+    border-radius: 8px;
+}
+/* div(:nth-child(4)) { 
+    align-self: flex-end;
+}*/
+/*page nav*/
+.hyper{
+    margin: 0.3em 0;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 60%;
+    white-space: nowrap;
+}
+.hyper a{
+    background-color: azure;
+    color: brown;
+    font-size: 70%;
+    text-decoration: none;
+}
+b{
+    color: brown;
+}
+p, li{
+    color: orange;
+}
+.school{
+    color: azure;
+    font-style: oblique;
+}
+h3, h4, h5{
+    color: orangered;
+}
+
+/* for bigger screens*/
+@media screen and (min-width: 768px) {
+    .lala{
+        padding: 1em;
+    }
+    .hyper a{
+        font-size: 1.5em;
+        margin:  0.1em;
+        padding: 0.3em;
+    }
+}
+/*other pages*/
+    #kai{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0.2em;
+        padding: 0.3em;
+    }
+    #kai > a{
+        text-align: right;
+        text-decoration: none;
+        color: azure;
+        background-color: red;
+        font-family: cursive;
+margin: 0.2em;
+    }
+
+    
